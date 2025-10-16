@@ -1,10 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_genres"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity4">
+    android:background="#FFFFFF"
+    android:padding="24dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/genre_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Qué tipo de anime te gusta?"
+            android:textSize="22sp"
+            android:textColor="#3A7BD5"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Botones de géneros -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <ToggleButton
+                android:id="@+id/btn_accion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textOn="Acción"
+                android:textOff="Acción"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_toggle_button"
+                android:layout_marginBottom="8dp"/>
+
+            <ToggleButton
+                android:id="@+id/btn_romance"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textOn="Romance"
+                android:textOff="Romance"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_toggle_button"
+                android:layout_marginBottom="8dp"/>
+
+            <ToggleButton
+                android:id="@+id/btn_fantasia"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textOn="Fantasía"
+                android:textOff="Fantasía"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_toggle_button"
+                android:layout_marginBottom="8dp"/>
+
+            <ToggleButton
+                android:id="@+id/btn_slice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textOn="Slice of Life"
+                android:textOff="Slice of Life"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_toggle_button"
+                android:layout_marginBottom="8dp"/>
+
+            <ToggleButton
+                android:id="@+id/btn_terror"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textOn="Terror"
+                android:textOff="Terror"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_toggle_button"
+                android:layout_marginBottom="8dp"/>
+
+            <ToggleButton
+                android:id="@+id/btn_shonen"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textOn="Shonen"
+                android:textOff="Shonen"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_toggle_button"
+                android:layout_marginBottom="8dp"/>
+
+            <ToggleButton
+                android:id="@+id/btn_shojo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textOn="Shojo"
+                android:textOff="Shojo"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_toggle_button"
+                android:layout_marginBottom="8dp"/>
+
+            <ToggleButton
+                android:id="@+id/btn_mecha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textOn="Mecha"
+                android:textOff="Mecha"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_toggle_button"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Botón Continuar -->
+        <Button
+            android:id="@+id/btn_next_genre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Continuar"
+
+            android:textColor="#FFFFFF">
+
+        </Button></LinearLayout>
+</ScrollView>

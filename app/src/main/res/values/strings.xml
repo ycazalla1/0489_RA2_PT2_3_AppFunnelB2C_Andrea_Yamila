@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">0489_RA2_PT2_3_AppFunnelB2C_Andrea_Yamila</string>
     <!-- Comentario prueba -->
+
+
+    <string name="benvingut">“Benvingut/da a SoraPlay ☁️”</string>
+    <string name="crear">Crea compte</string>
+    <string name="Iniciar_sesion">Inicar sesió</string>
 </resources>
