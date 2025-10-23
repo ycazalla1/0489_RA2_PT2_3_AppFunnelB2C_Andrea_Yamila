@@ -42,4 +42,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation("androidx.viewpager2:viewpager2:1.1.0") // última versión estable
     implementation("androidx.cardview:cardview:1.0.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.1")
 }

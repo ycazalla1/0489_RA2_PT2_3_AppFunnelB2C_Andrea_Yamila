@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">0489_RA2_PT2_3_AppFunnelB2C_Andrea_Yamila</string>
     <string name="IVA_inclos">IVA INCLÒS</string>
+    <string name="button_text">Començar proba gratuïta de 7 dies</string>
+    <string name="dimensionsMenu">803dp</string>
     <!-- Comentario prueba -->
 </resources>
