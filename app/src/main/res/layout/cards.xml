@@ -20,11 +20,11 @@
             android:orientation="vertical"
             android:padding="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="460dp">
 
             <TextView
                 android:id="@+id/titulo"
-                android:text="Título"
+                android:text="Títol"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp"
@@ -32,28 +32,26 @@
                 android:layout_width="match_parent"/>
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/preu"
+                android:textSize="16sp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Preu"
+                android:layout_marginBottom="8dp"/>
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/iva"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="@string/IVA_inclos"
+                android:layout_marginBottom="8dp"/>
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Button" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Començar proba gratuïta de 7 dies"
+                android:layout_marginBottom="8dp"/>
 
             <TextView
                 android:id="@+id/descripcion"

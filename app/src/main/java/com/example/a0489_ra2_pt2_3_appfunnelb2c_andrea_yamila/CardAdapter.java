@@ -3,6 +3,7 @@ package com.example.a0489_ra2_pt2_3_appfunnelb2c_andrea_yamila;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,10 +17,13 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
     public static class CardData {
         public String titulo;
         public String descripcion;
+        public String preu;
 
-        public CardData(String titulo, String descripcion) {
+
+        public CardData(String titulo, String descripcion, String preu) {
             this.titulo = titulo;
             this.descripcion = descripcion;
+            this.preu = preu;
         }
     }
 
@@ -33,11 +37,16 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
     public static class CardViewHolder extends RecyclerView.ViewHolder {
         TextView titulo;
         TextView descripcion;
+        TextView preu;
+        TextView iva;
+        Button button;
+
 
         public CardViewHolder(@NonNull View itemView) {
             super(itemView);
             titulo = itemView.findViewById(R.id.titulo);
             descripcion = itemView.findViewById(R.id.descripcion);
+            preu = itemView.findViewById(R.id.preu);
         }
     }
 
@@ -54,6 +63,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
         CardData card = cards.get(position);
         holder.titulo.setText(card.titulo);
         holder.descripcion.setText(card.descripcion);
+        holder.preu.setText(card.preu);
     }
 
     @Override
