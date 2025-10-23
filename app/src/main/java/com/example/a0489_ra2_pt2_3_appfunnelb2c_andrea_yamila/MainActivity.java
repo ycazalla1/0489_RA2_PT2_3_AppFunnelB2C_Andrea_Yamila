@@ -41,5 +41,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish(); // Opcional: cerrar la Activity actual
         });
+        //funciona
     }
 }
