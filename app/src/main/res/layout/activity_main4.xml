@@ -30,85 +30,137 @@
             android:layout_height="wrap_content"
             android:weightSum="2">
 
-            <ToggleButton
-                android:id="@+id/btn_accion"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textOn="Acción"
-                android:textOff="Acción"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/rounded_toggle_button"
-                android:layout_marginBottom="8dp"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <ToggleButton
-                android:id="@+id/btn_romance"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textOn="Romance"
-                android:textOff="Romance"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/rounded_toggle_button"
-                android:layout_marginBottom="8dp"/>
+                <ToggleButton
+                    android:id="@+id/btn_accion"
+                    android:layout_width="180dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_toggle_card"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="#3A7BD5"
+                    android:textOff="Acción"
+                    android:textOn="Acción"
+                    android:textStyle="bold" />
 
-            <ToggleButton
-                android:id="@+id/btn_fantasia"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textOn="Fantasía"
-                android:textOff="Fantasía"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/rounded_toggle_button"
-                android:layout_marginBottom="8dp"/>
+                <ToggleButton
+                    android:id="@+id/btn_romance"
+                    android:layout_width="180dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_toggle_card"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="#3A7BD5"
+                    android:textOff="Romance"
+                    android:textOn="Romance"
+                    android:textStyle="bold" />
 
-            <ToggleButton
-                android:id="@+id/btn_slice"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textOn="Slice of Life"
-                android:textOff="Slice of Life"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/rounded_toggle_button"
-                android:layout_marginBottom="8dp"/>
+            </LinearLayout>
 
-            <ToggleButton
-                android:id="@+id/btn_terror"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textOn="Terror"
-                android:textOff="Terror"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/rounded_toggle_button"
-                android:layout_marginBottom="8dp"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <ToggleButton
-                android:id="@+id/btn_shonen"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textOn="Shonen"
-                android:textOff="Shonen"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/rounded_toggle_button"
-                android:layout_marginBottom="8dp"/>
+                <ToggleButton
+                    android:id="@+id/btn_fantasia"
+                    android:layout_width="180dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_toggle_card"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="#3A7BD5"
+                    android:textStyle="bold"
+                    android:textOff="Fantasía"
+                    android:textOn="Fantasía" />
 
-            <ToggleButton
-                android:id="@+id/btn_shojo"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textOn="Shojo"
-                android:textOff="Shojo"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/rounded_toggle_button"
-                android:layout_marginBottom="8dp"/>
+                <ToggleButton
+                    android:id="@+id/btn_slice"
+                    android:layout_width="180dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_toggle_card"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="#3A7BD5"
+                    android:textStyle="bold"
+                    android:textOff="Slice of Life"
+                    android:textOn="Slice of Life" />
 
-            <ToggleButton
-                android:id="@+id/btn_mecha"
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textOn="Mecha"
-                android:textOff="Mecha"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/rounded_toggle_button"
-                android:layout_marginBottom="16dp"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btn_terror"
+                    android:layout_width="180dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_toggle_card"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="#3A7BD5"
+                    android:textOff="Terror"
+                    android:textOn="Terror"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/btn_shonen"
+                    android:layout_width="180dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_toggle_card"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="#3A7BD5"
+                    android:textOff="Shonen"
+                    android:textOn="Shonen"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/btn_shojo"
+                    android:layout_width="180dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_toggle_card"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="#3A7BD5"
+                    android:textOff="Shojo"
+                    android:textOn="Shojo"
+                    android:textStyle="bold" />
+
+                <ToggleButton
+                    android:id="@+id/btn_mecha"
+                    android:layout_width="180dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_toggle_card"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textColor="#3A7BD5"
+                    android:textOff="Mecha"
+                    android:textOn="Mecha"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <!-- Botón Continuar -->
