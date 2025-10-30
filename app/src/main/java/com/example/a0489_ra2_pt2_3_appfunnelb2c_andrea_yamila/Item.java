@@ -4,10 +4,10 @@ import android.media.Image;
 
 public class Item {
     private String title;
-    private Image image;
+    private int image;
 
     // Constructor
-    public Item(String title, Image imageUrl) {
+    public Item(String title, int image) {
         this.title = title;
         this.image = image;
     }
@@ -16,7 +16,7 @@ public class Item {
     public String getTitle() {
         return title;
     }
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 }

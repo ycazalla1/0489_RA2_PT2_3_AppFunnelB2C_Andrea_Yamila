@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,16 +27,24 @@ public class MainActivity5 extends AppCompatActivity {
 
         // Trending Now
         List<Item> trendingItems = Arrays.asList(
-//                new Item("Attack on Titan", ""),
-//                new Item("One Punch Man", ""),
-//                new Item("Demon Slayer", ""),
-//                new Item("My Hero Academia", ""),
-//                new Item("Jujutsu Kaisen", ""),
-//                new Item("Chainsaw Man", "")
+                new Item("Attack on Titan", R.drawable.attack_on_titan_lsit),
+                new Item("One Punch Man", R.drawable.onepunchman_list),
+                new Item("Demon Slayer", R.drawable.kimetsu_no_yaiba),
+                new Item("My Hero Academia", R.drawable.boku_no_hero_list),
+                new Item("Jujutsu Kaisen", R.drawable.jujutsu_kaisen_list),
+                new Item("Chainsaw Man", R.drawable.chainsaw_man_list)
         );
 
         // Nous episodis
 
         // Recomenar per tú
+
+        setUpRecyclerView(R.id.recyclerTrending, trendingItems);
+    }
+
+    private void setUpRecyclerView(int recyclerId, List<Item> items) {
+        RecyclerView recyclerView = findViewById(recyclerId);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        recyclerView.setAdapter(new ItemAdapter(items));
     }
 }
