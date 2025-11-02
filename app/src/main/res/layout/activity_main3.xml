@@ -26,7 +26,7 @@
             android:id="@+id/register_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tu viaje otaku comienza aquí"
+            android:text="El viatje comença aquí!"
             android:textColor="#3A7BD5"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -38,7 +38,7 @@
             android:id="@+id/register_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regístrate o inicia sesión para empezar a explorar"
+            android:text="Registra't o inicia sessió per començar a explorar"
             android:textColor="#808080"
             android:textSize="16sp"
             android:layout_marginTop="8dp"
@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
-            android:hint="Correo electrónico"
+            android:hint="Correo electrónic"
             android:padding="12dp"
 />
 
@@ -60,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="16dp"
-            android:hint="Contraseña"
+            android:hint="Contrasenya"
             android:padding="12dp"
 
             android:inputType="textPassword"/>
@@ -70,22 +70,10 @@
             android:id="@+id/btn_register_login"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Registrar / Iniciar sesión"
+            android:text="Registra / Inicia sesió"
             android:textSize="16sp"
             android:textColor="#FFFFFF"
             android:backgroundTint="#3A7BD5"
             android:layout_marginTop="24dp"/>
-
-        <!-- Opción de registro rápido (Google) -->
-        <Button
-            android:id="@+id/btn_google"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Registrarse con Google"
-            android:textSize="16sp"
-            android:textColor="#3A7BD5"
-            android:backgroundTint="#FFFFFF"
-            android:layout_marginTop="16dp" />
-
     </LinearLayout>
 </ScrollView>

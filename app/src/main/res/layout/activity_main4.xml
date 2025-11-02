@@ -16,7 +16,7 @@
             android:id="@+id/genre_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Qué tipo de anime te gusta?"
+            android:text="Quín tipus de anime t'agrada?"
             android:textSize="22sp"
             android:textColor="#3A7BD5"
             android:textStyle="bold"
@@ -44,8 +44,8 @@
                     android:gravity="center"
                     android:padding="12dp"
                     android:textColor="#3A7BD5"
-                    android:textOff="Acción"
-                    android:textOn="Acción"
+                    android:textOff="Acció"
+                    android:textOn="Acció"
                     android:textStyle="bold" />
 
                 <ToggleButton
@@ -165,7 +165,7 @@
 
         <!-- Botón Continuar -->
         <Button
-            android:id="@+id/btn_next_genre"
+            android:id="@+id/btn_continu"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Continuar"
